@@ -1,0 +1,342 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+html {
+  font-size: 16px;
+}
+
+input {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.4;
+  color: #333333;
+  font-family: cursive, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 16px;
+  margin-left: 82px;
+  font-size: 55px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #777;
+}
+
+input {
+  border: 1px solid #eeeeee;
+  padding: 12px;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px;
+  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  margin-left: 12px;
+  width: 200px;
+}
+
+.join {
+  cursor: pointer;
+  padding: 12px;
+  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  margin-left: 0px;
+  width: 200px;
+}
+
+button:hover {
+  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+button:disabled {
+  cursor: default;
+  background: rgb(60, 154, 243);
+}
+
+/* Join Page Styles */
+
+.centered-form {
+  background: #15161b;
+  background-image: url(../img/bg-01.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.centered-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(240, 206, 84, 0.5);
+  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -o-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -moz-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.centered-form__box {
+  box-shadow: 0px 0px 17px -5px #1d1f26;
+  background: #f7f7fa;
+  padding: 34px;
+  width: 354px;
+  height: 444px;
+  border-radius: 40px;
+  margin-top: 128px;
+}
+
+.centered-form button {
+  width: 100%;
+}
+
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 17px -10px #1d1f26;
+}
+
+/* Chat Page Layout */
+
+.chat {
+  display: flex;
+}
+
+.chat__sidebar {
+  height: 100vh;
+  color: white;
+  background: #15161b;
+  width: 225px;
+  overflow-y: scroll;
+}
+
+.chat__sidebar > p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Chat styles */
+
+.chat__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.chat__messages {
+  flex-grow: 1;
+  padding: 24px 24px 0 24px;
+  overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  /* margin-bottom: 16px;
+  border-radius: 30px;
+  background-color: rgb(0, 132, 255);
+  width: 300px;
+  padding: 5px;
+  align-self: flex-end; */
+}
+
+.message > p {
+  margin-left: 20px;
+  word-wrap: break-word;
+}
+
+/* .message > p > span {
+  color: white;
+} */
+
+.message__name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.message__meta {
+  color: #777;
+  font-size: 14px;
+}
+
+.message a {
+  color: #0070cc;
+}
+
+/* Message Composition Styles */
+
+.compose {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 16px;
+  padding: 24px;
+}
+
+.compose form {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.compose input {
+  border: 1px solid rgb(0, 132, 255);
+  border-radius: 30px;
+  width: 100%;
+  padding: 12px;
+  margin: 0 16px 0 0;
+  flex-grow: 1;
+}
+
+.compose button {
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+  font-weight: 400px;
+  font-size: 22px;
+  background: #ffbb00;
+  padding: 24px;
+  color: black;
+}
+
+.list-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 12px 24px 0 24px;
+}
+
+.users {
+  list-style-type: none;
+  font-weight: 300;
+  padding: 12px 24px 0 24px;
+  margin-left: 8px;
+}
+
+.right {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: calc(100% - 340px);
+  padding: 10px;
+  background-color: rgb(0, 132, 255);
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  color: white;
+  /* float: right;
+  align-self: flex-end;
+  background-color: black; */
+}
+
+.right > p {
+  margin-left: 20px;
+  word-wrap: break-word;
+}
+
+.right > p > span {
+  color: white;
+}
+
+.message > p > a > img {
+  width: 250px;
+  height: 200px;
+}
+
+form {
+  margin-top: 48px;
+}
+
+.body-content {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  font-size: 73px;
+  margin-top: -248px;
+  color: white;
+  font-weight: bold;
+}
+
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out;
+}
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/*  */
+.cssanimation,
+.cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.leJoltZoom span {
+  animation-name: leJoltZoom;
+}
+@keyframes leJoltZoom {
+  10% {
+    font-size: 140%;
+  }
+  40% {
+    font-size: 80%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
