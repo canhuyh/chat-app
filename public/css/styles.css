@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: fantasy;
 }
 
 html {
@@ -18,7 +18,6 @@ input {
 body {
   line-height: 1.4;
   color: #333333;
-  font-family: cursive, Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -43,7 +42,11 @@ input {
 button {
   cursor: pointer;
   padding: 12px;
-  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
   border: none;
   color: white;
   font-size: 16px;
@@ -56,7 +59,11 @@ button {
 .join {
   cursor: pointer;
   padding: 12px;
-  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
   border: none;
   color: white;
   font-size: 16px;
@@ -67,7 +74,11 @@ button {
 }
 
 button:hover {
-  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 button:disabled {
@@ -90,6 +101,7 @@ button:disabled {
   background-position: center;
   position: relative;
   z-index: 1;
+  flex-flow: column;
 }
 
 .centered-form::before {
@@ -102,9 +114,21 @@ button:disabled {
   top: 0;
   left: 0;
   background: rgba(240, 206, 84, 0.5);
-  background: -webkit-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: -o-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: -moz-linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 188, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
   background: linear-gradient(left, rgba(255, 188, 0, 0.5), rgba(0, 0, 0, 0.5));
   pointer-events: none;
 }
@@ -116,7 +140,7 @@ button:disabled {
   width: 354px;
   height: 444px;
   border-radius: 40px;
-  margin-top: 128px;
+  margin-top: 40px;
 }
 
 .centered-form button {
@@ -299,9 +323,7 @@ form {
 }
 
 .logo {
-  position: absolute;
   font-size: 73px;
-  margin-top: -248px;
   color: white;
   font-weight: bold;
 }
